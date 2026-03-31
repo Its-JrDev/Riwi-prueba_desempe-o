@@ -33,10 +33,10 @@ def save_csv(students_list, include_header=True):
 
 def load_csv():
     '''
-    Reads a CSV file using Path and returns a list of valid products.
+    Reads a CSV file using Path and returns a list of valid students.
     Skips invalid rows and tracks error count.
     '''
-    imported_products = []
+    imported_students = []
     error_count = 0
 
     # 1. Check if the file exists before opening
@@ -63,7 +63,7 @@ def load_csv():
                         error_count += 1
                         continue
 
-                    imported_products.append({
+                    imported_students.append({
                         'ID': uid,
                         'Name': name,
                         'Age': age,
@@ -76,7 +76,7 @@ def load_csv():
                     error_count += 1
                     continue
 
-        return imported_products, error_count
+        return imported_students, error_count
 
     except UnicodeDecodeError:
         print('\nError: Encoding issue. The file must be UTF-8.')

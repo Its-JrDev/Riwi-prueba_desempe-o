@@ -68,7 +68,7 @@ def main():
                         
             case 4:
                 
-                # Update existing product
+                # Update existing student
                 
                 if not students:
                     print('\nError: List of students is empty.')
@@ -101,9 +101,9 @@ def main():
                         
 
                         update_student_info(students, search_id, new_id, new_name, new_age, new_course, new_status)
-                        print('\nProduct updated.')
+                        print('\nStudent updated.')
                     else:
-                        print('\nError: Product not found.')
+                        print('\nError: Student not found.')
             
             case 5:
                 if not students:
@@ -121,7 +121,11 @@ def main():
                 else:
                     save_csv(students)
             case 7:
+                print('\nExiting...')
                 break
+            
+            case _: 
+                print('\nError: Choose a valid option.')
 
 
 if __name__ == '__main__':      # Skips indented lines of code if file was imported.

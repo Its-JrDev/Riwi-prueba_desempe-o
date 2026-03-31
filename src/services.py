@@ -52,7 +52,7 @@ def update_student_info(students_list, search_id, new_id, new_name, new_age, new
 
         return True  # Update successful
 
-    return False  # Product not found
+    return False  # Student not found
 
 def delete_student(students_list, search_id):
     # 1. Reuse our search function to check if it exists
@@ -63,4 +63,4 @@ def delete_student(students_list, search_id):
         students_list.remove(student)
         return True, students_list # Successfully removed
         
-    return False, students_list # Product not found
+    return False, students_list # Student not found
