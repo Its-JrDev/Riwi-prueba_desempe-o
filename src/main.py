@@ -65,7 +65,8 @@ def main():
                         print('Student Found:')
                         print(f"ID: {student_found['ID']} | Name: {student_found['Name']} | Age: {student_found['Age']} | Course: {student_found['Course']} | Status: {student_found['Status']}")
                         print('-' * 35)
-                        
+                    else:
+                        print('\nError: Student not found.')  
             case 4:
                 
                 # Update existing student
