@@ -79,7 +79,7 @@ def validate_status(prompt, status = ['Active', 'Not active']):
         
 def validate_ask(prompt):
     while True:
-        answer = input(prompt).capitalize
+        answer = input(prompt).upper().strip()
         if answer not in ['S', 'N']:
             print('\nError: Choose an option between S or N.')
         else:

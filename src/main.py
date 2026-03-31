@@ -76,6 +76,12 @@ def main():
                     search_id = validate_number('Enter ID of student to update their data: ', int)
                     
                     if search_student(students, search_id):
+                        new_id = None
+                        new_name = None
+                        new_age = None
+                        new_course = None
+                        new_status = None
+                        
                         ask = validate_ask('You want to change student\'s ID (S/N)?')
                         if ask == 'S':
                             new_id = validate_number('Enter new value for ID: ', int)

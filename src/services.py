@@ -23,7 +23,7 @@ def search_student(students_list, search_id):
             return student
         return None
 
-def update_student_info(students_list, search_id, new_id= None, new_name= None, new_age= None, new_course= None, new_status= None):
+def update_student_info(students_list, search_id, new_id, new_name, new_age, new_course, new_status):
     """
 
     """
